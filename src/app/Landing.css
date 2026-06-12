@@ -1,0 +1,122 @@
+.landing {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.landing-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  pointer-events: auto;
+  text-align: center;
+  padding: 40px 52px;
+  background: rgba(10, 14, 20, 0.55);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: var(--border);
+}
+
+.wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.wordmark-dither {
+  font-family: var(--mono);
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.04em;
+  text-shadow:
+    0 0 40px rgba(126, 200, 227, 0.4),
+    0 0 80px rgba(126, 200, 227, 0.15);
+}
+
+.wordmark-lab {
+  font-family: var(--mono);
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  margin-left: 8px;
+  opacity: 0.85;
+}
+
+.tagline {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: lowercase;
+  color: var(--ink-dim);
+  font-weight: 400;
+}
+
+.open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 12px 28px;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  color: var(--accent);
+  border: var(--border);
+  border-color: var(--accent);
+  background: rgba(126, 200, 227, 0.06);
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.open-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(126, 200, 227, 0.08);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.open-btn:hover {
+  background: rgba(126, 200, 227, 0.12);
+  box-shadow: 0 0 24px rgba(126, 200, 227, 0.2), inset 0 0 12px rgba(126, 200, 227, 0.04);
+  color: #fff;
+  border-color: rgba(126, 200, 227, 0.9);
+}
+
+.open-btn:active {
+  background: rgba(126, 200, 227, 0.2);
+}
+
+.open-btn-bracket {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.corner-label {
+  position: absolute;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(74, 122, 155, 0.6);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.corner-tl {
+  top: 24px;
+  left: 28px;
+}
+
+.corner-br {
+  bottom: 24px;
+  right: 28px;
+}

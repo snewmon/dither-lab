@@ -1,0 +1,26 @@
+.app-root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.glitch-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation: glitch-in 0.7s steps(1) forwards;
+  z-index: 10;
+}
+
+@keyframes glitch-in {
+  0%   { background: transparent; }
+  10%  { background: repeating-linear-gradient(0deg, rgba(126,200,227,0.15) 0px, transparent 2px, transparent 6px); }
+  20%  { background: rgba(10, 14, 20, 0.7); clip-path: inset(0 0 70% 0); }
+  30%  { background: rgba(10, 14, 20, 0.7); clip-path: inset(30% 0 40% 0); }
+  40%  { background: rgba(10, 14, 20, 0.9); clip-path: inset(0 0 0 0); }
+  55%  { background: repeating-linear-gradient(0deg, rgba(10,14,20,0.95) 0px, rgba(10,14,20,0.95) 3px, transparent 3px, transparent 8px); }
+  70%  { background: rgba(10, 14, 20, 0.97); }
+  85%  { background: rgba(10, 14, 20, 0.6); }
+  100% { background: transparent; }
+}

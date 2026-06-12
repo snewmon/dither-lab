@@ -1,0 +1,22 @@
+{
+  "name": "dither-lab",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.5",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^4.1.8"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.9.1",
+    "comlink": "^4.4.2",
+    "preact": "^10.29.2"
+  }
+}

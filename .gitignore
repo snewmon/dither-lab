@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.wrangler/
+
+# planning and agent files
+PLAN.md
+CLAUDE.md
+AGENTS.md
+.claude/
+.cursor/
+.cursorrules
+.aider*
+.github/copilot-instructions.md

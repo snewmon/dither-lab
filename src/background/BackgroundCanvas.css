@@ -1,0 +1,9 @@
+.bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  /* CSS size always full-viewport; pixel dimensions set by JS with DPR */
+  object-fit: cover;
+}
